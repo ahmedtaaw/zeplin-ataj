@@ -2,69 +2,252 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="favicon.ico">
-    <title>tajawal.com - home for millions of flights through oman air lines</title>
-    <link rel="stylesheet" href="/assets/Styles/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="favicon.ico">
+  <title>tajawal.com - home for millions of flights through oman air lines</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/Styles/main.css">
 </head>
 
 <body>
 
-    <header class="navbar navbar-default navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+  <header class="navbar navbar-default navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+          aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><img src="/assets/images/logo-en-white.svg" alt="tajawal logo"> </a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#"><i class="fa fa-plane" aria-hidden="true"></i></a></li>
-            <li><a href="#about"><i class="fa fa-hotel" aria-hidden="true"></i></a></li>
-            <li><a href="#contact"><i class="fa fa-ticket" aria-hidden="true"></i></a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="./">My Booking <span class="sr-only">(current)</span></a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Settings <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My tajawal! <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div><!--/.nav-collapse -->
+        <a class="navbar-brand" href="#"><img src="/assets/images/logo-en-white.svg" alt="tajawal logo"> </a>
       </div>
-    </header>
-   
-    <div class="container-fluid">
-        <div class="row"><img src="/assets/images/hero-image.jpg" alt="Banner Image" class="img-responsive"></div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#"><i class="fa fa-plane" aria-hidden="true"></i></a></li>
+          <li><a href="#about"><i class="fa fa-hotel" aria-hidden="true"></i></a></li>
+          <li><a href="#contact"><i class="fa fa-ticket" aria-hidden="true"></i></a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="./">My Booking <span class="sr-only">(current)</span></a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Settings <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li class="dropdown-header">Nav header</li>
+              <li><a href="#">Separated link</a></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My tajawal! <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li class="dropdown-header">Nav header</li>
+              <li><a href="#">Separated link</a></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
     </div>
-    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="/node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row"><img src="/assets/images/hero-image.jpg" alt="Banner Image" class="img-responsive"></div>
+  </div>
+
+  <div class="container block-rounded-blue">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for=""><input type="radio" name="flightOptions"> One-way</label>
+          <label for=""><input type="radio" name="flightOptions"> Roundtrip</label>
+          <label for=""><input type="radio" name="flightOptions"> Multi-city</label>
+        </div>
+      </div>
+      <div class="col-sm-6 text-right">
+        <label for=""><input type="checkbox" name="flightOptions"> Direct flights only</label>
+        <label for=""><input type="checkbox" name="flightOptions"> Refundable</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="block-rounded-white">
+          <div class="half-ver">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-crosshairs"></i></span>
+              <input type="text" class="form-control" aria-label="Origin" placeholder="Origin">
+              <span class="input-group-addon">
+              <small>Nearby<br>airports</small>
+            </span>
+              <span class="input-group-addon">
+               <small class="check-light">
+             
+             <input type="checkbox"><label></label>
+               </small>
+            </span>
+            </div>
+          </div>
+          <div class="half-ver">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-map-marker"></i></span>
+              <input type="text" class="form-control" aria-label="Arrival" placeholder="Arrival">
+              <span class="input-group-addon">
+              <small>Nearby<br>airports</small>
+            </span>
+              <span class="input-group-addon">
+              <small class="check-light">
+            <input type="checkbox"> <label ></label>
+             </small>
+            </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="block-rounded-white">
+          <div class="half-horz">
+            <p>Origin</p>
+          </div>
+          <div class="half-horz">
+            <p>Origin</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="block-rounded-white">
+          <p class="text-center">January
+            <br><span class="big-X">7</span> Tuesday
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="block-rounded-white">
+          <p class="text-center">January
+            <br><span class="big-X">7</span> Tuesday
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container promotions">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="circle-box">
+          <h1>15% OFF</h1>
+          <p>Business class</p>
+        </div>
+      </div>
+      <div class="col-sm-6 text-center top-padding">
+        <h1>Oman Air<br><small>Modern vision. Timeless traditions</small></h3>
+          <h1></h1>
+          <h4>Oman Air is now offering <a href="#">10% off economy class</a> fares<br> and <a href="#">15% off business class</a>            fares to exciting<br> destinations. Hurry and book now while offers last! </h4>
+      </div>
+      <div class="col-sm-3">
+        <div class="circle-box yellow">
+          <h1>10% OFF</h1>
+          <p>Economy class</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=" grey-bg ver-spacing">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-sm-push-2">
+          <h2 class="text-center">Terms & Conditions</h2>
+          <div class="col-sm-6">
+            <ol>
+              <li>
+                <p>All fares are subject to availability at the time of booking.</p>
+              </li>
+              <li>
+                <p>Book by 31st March 2017.</p>
+              </li>
+              <li>
+                <p>Travel by 30th June 2017.</p>
+              </li>
+              <li>
+                <p>Discount applicable only on base fares.</p>
+              </li>
+              <li>
+                <p>Check “Fare Conditions” during the booking to view all applicable fare rules, penalties, flight restrictions
+                  and date change fees.</p>
+              </li>
+            </ol>
+          </div>
+          <div class="col-sm-6">
+            <ol start="6">
+              <li>
+                <p>Discounts are applicable as follows: 10% off Economy class and 15% off Business class</p>
+              </li>
+              <li>
+                <p>Offer valid only on return journeys.</p>
+              </li>
+              <li>
+                <p>Fares are applicable on Oman Air flights only.</p>
+              </li>
+              <li>
+                <p>Weekend surcharges may apply.</p>
+              </li>
+              <li>
+                <p>Other terms and conditions apply. </p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="getapp">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h1>Get the tajawal app!</h1>
+          <p>
+            Our app has all your flight and hotel needs covered:<br> Secure payment channels, easy 4-step booking process,<br>            and sleek user designs. What more could you ask for?
+          </p>
+          <p>
+            <a href="#"><img src="/assets/images/app-store-apple.png" alt="apple app store link"></a>
+            <a href="#"><img src="/assets/images/app-store-google.png" alt="google play link"></a>
+          </p>
+        </div>
+        <div class="col-sm-6 text-right">
+          <p class="app-screens-mobile">
+            <img src="/assets/images/app.png" alt="app screens">
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="newsList-join">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h1>Join our exclusive newsletter list</h1>
+          <p>Join our exclusive newsletter list</p>
+        </div>
+        <div class="col-sm-6 text-right">
+          .form
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="/node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
 </body>
 
 </html>
