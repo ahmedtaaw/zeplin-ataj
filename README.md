@@ -2,8 +2,10 @@
 a draft project
 
 <i>write the below commands in your npm terminal</i>
-npm install
-gulp
+
+=>npm install
+
+=>gulp
 
 If you have any problems installing or running this code, please email me ahmedtaaw@gmail.com or tweet me @ahmedtaaw
 
