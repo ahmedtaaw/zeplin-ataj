@@ -33,9 +33,9 @@
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#"><i class="fa fa-plane" aria-hidden="true"></i></a></li>
-          <li><a href="#about"><i class="fa fa-hotel" aria-hidden="true"></i></a></li>
-          <li><a href="#contact"><i class="fa fa-ticket" aria-hidden="true"></i></a></li>
+          <li class="active"><a href="#"><i class="fa fa-plane" aria-hidden="true"></i> Flights</a></li>
+          <li><a href="#about"><i class="fa fa-hotel" aria-hidden="true"></i> Hotels</a></li>
+          <li><a href="#contact"><i class="fa fa-ticket" aria-hidden="true"></i> Offers</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li class="active"><a href="./">My Booking <span class="sr-only">(current)</span></a></li>
@@ -76,15 +76,21 @@
   <div class="container block-rounded-blue">
     <div class="row">
       <div class="col-sm-6">
-        <div class="form-group">
-          <label for=""><input type="radio" name="flightOptions"> One-way</label>
-          <label for=""><input type="radio" name="flightOptions"> Roundtrip</label>
-          <label for=""><input type="radio" name="flightOptions"> Multi-city</label>
+        <div class="form-group ">
+          <div class="tabs-toggle">
+          <input checked type="radio" name="flightOptions"> <label >One-way</label>
+          </div>
+        <div class="tabs-toggle">
+          <input type="radio" name="flightOptions"><label  >Roundtrip</label>
+          </div>
+         <div class="tabs-toggle">
+         <input type="radio" name="flightOptions">  <label  >Multi-city</label>
+          </div>
         </div>
       </div>
-      <div class="col-sm-6 text-right">
-        <label for=""><input type="checkbox" name="flightOptions"> Direct flights only</label>
-        <label for=""><input type="checkbox" name="flightOptions"> Refundable</label>
+      <div class="col-sm-6 text-right margin-top">
+        <div class="check-dark"><input id="c1" type="checkbox" name="flightOptions"><label></label></div><label for="c1"> Direct flights only</label>
+        <div class="check-dark"><input  id="c2" type="checkbox" name="flightOptions"><label></label></div><label for="c2"> Refundable</label>
       </div>
     </div>
     <div class="row">
@@ -124,25 +130,40 @@
       <div class="col-sm-4">
         <div class="block-rounded-white">
           <div class="half-horz">
-            <p>Origin</p>
+            <div class="pick-block">
+              <input type="text" class="form-control datepicker-1">
+              <p class="fakedate-1">
+                <img src="/assets/images/add-going.jpg" alt="add Going icon">
+                <strong>Add Going</strong>
+              </p>
+            </div>
           </div>
           <div class="half-horz">
-            <p>Origin</p>
+            <div class="pick-block">
+              <input type="text" class="form-control datepicker-2">
+              <p class="fakedate-2">
+                <img src="/assets/images/add-return.jpg" alt="add Return icon">
+                <strong>Add Return</strong>
+              </p>
+            </div>
           </div>
         </div>
       </div>
       <div class="col-sm-2">
         <div class="block-rounded-white">
-          <p class="text-center">January
-            <br><span class="big-X">7</span> Tuesday
-          </p>
+          <div class="half-ver">
+            <h5>Economy</h5>
+          </div>
+          <div class="half-ver">
+            <h5>1 passenger</h5>
+          </div>
         </div>
       </div>
       <div class="col-sm-2">
-        <div class="block-rounded-white">
-          <p class="text-center">January
-            <br><span class="big-X">7</span> Tuesday
-          </p>
+        <div class="block-rounded-white input-contain">
+          <button type="submit"><i class="fa fa-search" aria-hidden="true"></i>
+          <br>
+        Search flights</button>
         </div>
       </div>
     </div>
@@ -243,7 +264,7 @@
       <div class="row">
         <div class="col-sm-6">
           <h2>Join our exclusive newsletter list</h1>
-          <p>Get travel tips, flight deals and dreamy destinations sent straight to your inbox</p>
+            <p>Get travel tips, flight deals and dreamy destinations sent straight to your inbox</p>
         </div>
         <div class="col-sm-6 text-right margin-top">
           <div class="form-inline">
@@ -404,11 +425,18 @@
   <script src="/node_modules/jquery/dist/jquery.min.js"></script>
   <script src="/node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
   <script src="/node_modules/select2/dist/js/select2.min.js"></script>
+  <script src="/node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
   <script>
     $(document).ready(function () {
       $('.select2').select2({ minimumResultsForSearch: Infinity });
-
-
+      $('.datepicker-1').datepicker({ format: 'MM dd DD' }).on('changeDate', function (e) {
+        $('.fakedate-1').html($('.datepicker-1').val());
+        $('.fakedate-1').html($('.fakedate-1').html().split(" ").join("<span>"));
+      });
+$('.datepicker-2').datepicker({ format: 'MM dd DD' }).on('changeDate', function (e) {
+        $('.fakedate-2').html($('.datepicker-2').val());
+        $('.fakedate-2').html($('.fakedate-2').html().split(" ").join("<span>"));
+      });
     });
   </script>
 </body>

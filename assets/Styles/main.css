@@ -2,6 +2,7 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 @import url(/node_modules/select2/dist/css/select2.min.css);
 @import "http://blazeworx.com/flags.css";
+@import url(/node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5490,7 +5491,12 @@ header {
   height: auto; }
 
 .navbar-static-top {
-  margin-bottom: 19px; }
+  margin-bottom: 0; }
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    padding-top: 25px;
+    padding-bottom: 25px; } }
 
 .LOGO-EN-WHITE {
   width: 158px;
@@ -5503,7 +5509,14 @@ header {
   border-radius: 5px;
   color: #FFF;
   padding-top: 20px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  margin-top: -90px;
+  z-index: 5;
+  position: relative; }
+  .block-rounded-blue label {
+    font-weight: normal; }
+  .block-rounded-blue .margin-top {
+    margin-top: 10px; }
 
 .block-rounded-white {
   color: #35557b;
@@ -5528,6 +5541,17 @@ header {
       width: 24px; }
     .block-rounded-white .input-group .input-group-addon i {
       font-size: 16px; }
+  .block-rounded-white.input-contain {
+    padding: 0;
+    font-size: 16px;
+    background-color: transparent; }
+    .block-rounded-white.input-contain button {
+      background-image: linear-gradient(to bottom, #f8d957, #f6c857);
+      color: #465b83;
+      border-color: transparent;
+      width: 100%;
+      height: 100%;
+      border-radius: inherit; }
 
 .half-ver, .half-horz {
   padding: 5px 10px;
@@ -5544,6 +5568,46 @@ header {
   display: inline-block; }
   .half-horz:first-child {
     border-right: 1px solid #35557b; }
+  .half-horz .pick-block {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    .half-horz .pick-block input {
+      opacity: 0;
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      cursor: pointer; }
+    .half-horz .pick-block p {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      text-align: center;
+      font-size: 12px;
+      white-space: pre;
+      margin: 0;
+      margin-top: 9px;
+      line-height: 1; }
+      .half-horz .pick-block p img, .half-horz .pick-block p strong {
+        display: block;
+        margin: auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 10px; }
+      .half-horz .pick-block p strong {
+        top: 50px; }
+      .half-horz .pick-block p span {
+        font-size: 32px;
+        display: block;
+        margin: 10px 0;
+        line-height: 18px; }
+        .half-horz .pick-block p span span {
+          font-size: 12px; }
 
 .check-light {
   position: relative;
@@ -5551,7 +5615,10 @@ header {
   .check-light input {
     position: relative;
     z-index: 2;
-    cursor: pointer; }
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    opacity: 0; }
   .check-light label {
     content: "";
     width: 18px;
@@ -5560,11 +5627,54 @@ header {
     border: 2px solid #35557b;
     border-radius: 3px;
     position: absolute;
-    z-index: 0; }
-  .check-light input:checked + label {
+    z-index: 0;
+    left: 0;
+    top: 0;
+    display: inline-block; }
+  .check-light input:checked + label:after {
     content: "\f00c";
     font: normal normal normal 14px/1 FontAwesome;
-    color: #35557b; }
+    color: #35557b;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    display: inline-block; }
+
+.check-dark {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+  margin-right: 5px; }
+  .check-dark input {
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    opacity: 0; }
+  .check-dark label {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-color: #35557b;
+    border: 1px solid #FFF;
+    border-radius: 3px;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    display: inline-block; }
+  .check-dark input:checked + label:after {
+    content: "\f00c";
+    font: normal normal normal 14px/1 FontAwesome;
+    color: #FFF;
+    position: absolute;
+    z-index: 0;
+    left: 1px;
+    top: 0;
+    display: inline-block; }
 
 .circle-box {
   border-radius: 50%;
@@ -5687,16 +5797,23 @@ h1 small, h2 small, h3 small, h4 small, h5 small {
     background-color: #30537e;
     border-color: #30537e;
     border-radius: 5px;
-    padding: 10px 15px;
+    padding: 10px 8px 10px 15px;
     height: auto;
     color: #FFF;
     margin-bottom: 25px; }
     .knowus .dropdown a, .knowus .dropdown a:hover, .knowus .dropdown a:focus {
       color: #FFF;
-      text-decoration: none; }
+      text-decoration: none;
+      display: block; }
+    .knowus .dropdown .caret {
+      float: right;
+      margin-top: 8px;
+      border-width: 4px 4px 0 4px; }
     .knowus .dropdown .dropdown-menu {
       width: 100%;
       border-radius: 0 0 4px 4px; }
+      .knowus .dropdown .dropdown-menu a, .knowus .dropdown .dropdown-menu a:hover, .knowus .dropdown .dropdown-menu a:focus {
+        color: #35557b; }
   .knowus .select2-container--default .select2-selection--single .select2-selection__rendered {
     color: #FFF; }
   .knowus .select2-container--default .select2-selection--single .select2-selection__arrow {
@@ -5731,3 +5848,31 @@ footer {
     border-top: solid 1px #204674;
     margin-top: 10px;
     margin-bottom: 15px; }
+
+.tabs-toggle {
+  position: relative;
+  display: inline-block; }
+  .tabs-toggle input {
+    position: absolute;
+    z-index: 2;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer; }
+  .tabs-toggle label {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    color: #FFF;
+    width: 111px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: transparent;
+    text-align: center;
+    line-height: 3;
+    font-weight: normal; }
+  .tabs-toggle input:checked + label {
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+    background-color: #4e6788; }
