@@ -1,5 +1,7 @@
 @charset "UTF-8";
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url(/node_modules/select2/dist/css/select2.min.css);
+@import "http://blazeworx.com/flags.css";
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5595,7 +5597,7 @@ h4, h5 {
 h1 small, h2 small, h3 small, h4 small, h5 small {
   color: inherit; }
 
-.ver-spacing, .promotions {
+.ver-spacing, .promotions, .knowus, footer {
   padding-top: 35px;
   padding-bottom: 35px; }
 
@@ -5604,7 +5606,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small {
   .promotions:after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: 35px;
     background-color: #35557b;
     height: 2px;
     width: 75%;
@@ -5627,3 +5629,105 @@ h1 small, h2 small, h3 small, h4 small, h5 small {
   .getapp .app-screens-mobile {
     margin: 0;
     margin-top: -100px; }
+
+.newsList-join {
+  background-color: #496f9d; }
+
+.iLogo {
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  fill: #f5cb33;
+  vertical-align: middle; }
+  .iLogo.purple {
+    fill: #993499; }
+  .iLogo.skyblue {
+    fill: #66cdff; }
+
+.link-left-space {
+  margin-left: 10px; }
+
+.newsList-join {
+  padding: 5px 0 15px 0; }
+  .newsList-join h2, .newsList-join p {
+    color: #FFF; }
+  .newsList-join .margin-top {
+    margin-top: 30px; }
+  .newsList-join input[type=text], .newsList-join button {
+    height: auto;
+    padding: 12px 15px; }
+  .newsList-join button {
+    background-image: linear-gradient(to bottom, #f8d957, #f6c857);
+    color: #FFF;
+    border-color: transparent;
+    font-size: 0;
+    min-width: 90px; }
+    .newsList-join button:hover {
+      color: #FFF;
+      border-color: transparent; }
+    .newsList-join button i {
+      font-size: 18px; }
+
+.knowus {
+  background-color: #204674; }
+  .knowus *, .knowus *:hover {
+    color: white; }
+  .knowus .link-left-space {
+    margin-left: 40px; }
+  .knowus .select2-container {
+    margin: 30px 0 25px 0; }
+  .knowus .select2-container--default .select2-selection--single {
+    background-color: #30537e;
+    border-color: #30537e;
+    border-radius: 5px;
+    padding: 5px;
+    height: auto;
+    color: #FFF; }
+  .knowus .dropdown {
+    background-color: #30537e;
+    border-color: #30537e;
+    border-radius: 5px;
+    padding: 10px 15px;
+    height: auto;
+    color: #FFF;
+    margin-bottom: 25px; }
+    .knowus .dropdown a, .knowus .dropdown a:hover, .knowus .dropdown a:focus {
+      color: #FFF;
+      text-decoration: none; }
+    .knowus .dropdown .dropdown-menu {
+      width: 100%;
+      border-radius: 0 0 4px 4px; }
+  .knowus .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #FFF; }
+  .knowus .select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 7px; }
+  .knowus .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: #fff transparent transparent transparent; }
+
+.social-contacts ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.social-contacts li {
+  display: inline-block; }
+  .social-contacts li a {
+    background-color: #FFF;
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    color: #35557b;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 2; }
+    .social-contacts li a *, .social-contacts li a *:hover, .social-contacts li a:hover {
+      color: #35557b; }
+
+footer {
+  background-color: #163862; }
+  footer *, footer *:hover {
+    color: white; }
+  footer hr {
+    border-top: solid 1px #204674;
+    margin-top: 10px;
+    margin-bottom: 15px; }

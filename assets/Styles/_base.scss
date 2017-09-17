@@ -147,7 +147,7 @@ header{
     &:after{
       content: "";
       position: absolute;
-      bottom: 0;
+      bottom: 35px;
       background-color:$main-color;
       height: 2px;
       width: 75%;
@@ -172,3 +172,128 @@ header{
     margin-top: -100px;
     }
   }
+  .newsList-join{
+    background-color: #496f9d;
+  }
+  .iLogo{
+    width: 13px;
+  height: 13px;
+  display: inline-block;
+    fill:#f5cb33;
+    vertical-align: middle; 
+  &.purple{
+    fill:#993499;
+  
+  }
+  &.skyblue{
+    fill:#66cdff;
+  
+  }
+  }
+.link-left-space{
+  margin-left: 10px;
+}
+.newsList-join{
+  padding: 5px 0 15px 0;
+h2,p{
+  color: #FFF;
+}
+.margin-top{
+  margin-top: 30px;
+}
+input[type=text],button{
+height: auto;
+padding: 12px 15px;
+}
+button{
+   background-image: linear-gradient(to bottom, #f8d957, #f6c857);
+   color: #FFF;
+   border-color: transparent;
+   &:hover{
+     color: #FFF;
+     border-color: transparent;
+   }
+  font-size: 0;
+    min-width: 90px;
+   i{
+     font-size: 18px;
+   }
+}
+}
+.knowus{
+  background-color: #204674;
+  @extend .ver-spacing;
+  *,*:hover{color:white;}
+  .link-left-space{
+  margin-left: 40px;
+}
+.select2-container{
+  margin: 30px 0 25px 0;
+}
+.select2-container--default .select2-selection--single{
+    background-color: #30537e;
+    border-color:  #30537e;
+    border-radius: 5px;
+    padding: 5px;
+    height: auto;
+    color: #FFF;
+}
+  .dropdown{
+    background-color: #30537e;
+    border-color:  #30537e;
+    border-radius: 5px;
+        padding: 10px 15px;
+    height: auto;
+    color: #FFF;
+    margin-bottom: 25px;
+    a,a:hover,a:focus{
+      color: #FFF;
+      text-decoration: none;
+    }
+    .dropdown-menu{
+      width: 100%;  
+      border-radius: 0 0 4px 4px;
+    }
+  }
+  .select2-container--default .select2-selection--single .select2-selection__rendered{
+    color:#FFF;
+  }
+  .select2-container--default .select2-selection--single .select2-selection__arrow{
+    top:7px;
+  }
+  .select2-container--default .select2-selection--single .select2-selection__arrow b{
+    border-color: #fff transparent transparent transparent;
+  }
+}
+.social-contacts{
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li{
+    display: inline-block;
+    a{
+      background-color: #FFF;
+      display: inline-block;
+      width: 29px;
+      height: 29px;
+      color: $main-color;
+      border-radius: 10px;
+      text-align: center;
+      line-height: 2;
+      *,*:hover,&:hover{
+        color: $main-color;
+      }
+    }
+  }
+}
+footer{ background-color: #163862; 
+  @extend .ver-spacing;
+*,*:hover{color:white;}
+hr{
+  border-top: solid 1px #204674;
+  margin-top: 10px;
+    margin-bottom: 15px;
+}
+}
