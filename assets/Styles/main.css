@@ -3,6 +3,7 @@
 @import url(/node_modules/select2/dist/css/select2.min.css);
 @import "http://blazeworx.com/flags.css";
 @import url(/node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css);
+@import url(/node_modules/carousel-3d/dist/styles/jquery.carousel-3d.default.css);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -3044,8 +3045,8 @@ tbody.collapse.in {
       margin-right: 0; } }
 
 .navbar-default {
-  background-color: #3a3a3a;
-  border-color: #292929; }
+  background-color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.5); }
   .navbar-default .navbar-brand {
     color: #FFFFFF; }
     .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
@@ -3060,7 +3061,7 @@ tbody.collapse.in {
       background-color: transparent; }
   .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #FFFFFF;
-    background-color: #292929; }
+    background-color: rgba(0, 0, 0, 0.5); }
   .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
     color: #ccc;
     background-color: transparent; }
@@ -3072,9 +3073,9 @@ tbody.collapse.in {
       background-color: #FFFFFF; }
   .navbar-default .navbar-collapse,
   .navbar-default .navbar-form {
-    border-color: #292929; }
+    border-color: rgba(0, 0, 0, 0.5); }
   .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-    background-color: #292929;
+    background-color: rgba(0, 0, 0, 0.5);
     color: #FFFFFF; }
   @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
@@ -3084,7 +3085,7 @@ tbody.collapse.in {
         background-color: transparent; }
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
       color: #FFFFFF;
-      background-color: #292929; }
+      background-color: rgba(0, 0, 0, 0.5); }
     .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
       color: #ccc;
       background-color: transparent; } }
@@ -5484,6 +5485,11 @@ tbody.collapse.in {
   overflow: visible;
   clip: auto; }
 
+.btn-default {
+  color: #fff;
+  background: linear-gradient(to bottom, #bd2483, #891e61);
+  border: 0; }
+
 h1.master, .h1.master, h2.master, .h2.master, h3.master, .h3.master,
 h4.master, .h4.master, h5.master, .h5.master {
   position: relative;
@@ -5514,22 +5520,52 @@ h4.master, .h4.master, h5.master, .h5.master {
 header {
   background-color: #bd2483; }
 
-.navbar-brand {
-  height: auto; }
-
 .navbar-static-top {
   margin-bottom: 0; }
 
 @media (min-width: 768px) {
   .navbar-nav > li > a {
-    padding-top: 25px;
-    padding-bottom: 25px; } }
+    padding-top: 28px;
+    padding-bottom: 28px; } }
 
-.LOGO-EN-WHITE {
-  width: 158px;
-  height: 38px;
-  -o-object-fit: contain;
-     object-fit: contain; }
+.navbar-brand {
+  height: auto;
+  padding: 25px 25px; }
+  .navbar-brand img {
+    width: 158px;
+    height: 25px;
+    -o-object-fit: contain;
+       object-fit: contain; }
+
+.hero-banner {
+  margin-top: -78px;
+  position: relative; }
+  .hero-banner .hero-info {
+    position: absolute;
+    max-width: 920px;
+    top: 150px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0));
+    padding: 0 25px;
+    border-radius: 3px; }
+    .hero-banner .hero-info h1 {
+      font-size: 45px;
+      letter-spacing: -1px;
+      margin: 15px 0; }
+    .hero-banner .hero-info h3 {
+      font-weight: 400;
+      font-size: 28px;
+      margin: 15px 0;
+      letter-spacing: -0.2px; }
+    .hero-banner .hero-info .btn-lg, .hero-banner .hero-info .btn-group-lg > .btn {
+      width: 215px;
+      height: 50px;
+      border-radius: 2px;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15); }
+    .hero-banner .hero-info .logo-placement {
+      margin-top: 50px; }
 
 .block-rounded-blue {
   background-color: rgba(58, 58, 58, 0.85);
@@ -5537,7 +5573,6 @@ header {
   color: #FFF;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-top: -90px;
   z-index: 5;
   position: relative; }
   .block-rounded-blue label {

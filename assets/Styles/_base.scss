@@ -1,7 +1,11 @@
 $main-color: #bd2483;
 $info-color:rgba(58, 58, 58, 0.85);
 $linear-btn:linear-gradient(to bottom, #bd2483, #891e61);
-
+.btn-default{
+        color: #fff;
+    background: $linear-btn;
+    border:0;
+}
   h1, .h1, h2, .h2, h3, .h3,
     h4,.h4,h5,.h5{
         &.master{
@@ -36,22 +40,59 @@ $linear-btn:linear-gradient(to bottom, #bd2483, #891e61);
 header {
     background-color: $main-color;
 }
-.navbar-brand {
-    height: auto;
-}
+
 .navbar-static-top {
     margin-bottom: 0;
 }
   @media (min-width:768px){
     .navbar-nav > li > a{
-          padding-top: 25px;
-    padding-bottom:25px;
+              padding-top: 28px;
+    padding-bottom: 28px;
     }
   }
-.LOGO-EN-WHITE {
-    width: 158px;
-    height: 38px;
+.navbar-brand{
+   height: auto;
+   padding: 25px 25px;
+    img{
+         width: 158px;
+    height: 25px;
     object-fit: contain;
+    }
+}
+.hero-banner{
+    margin-top: -78px;
+    position: relative;
+    .hero-info{
+       position: absolute;
+       max-width: 920px;
+       top:150px;
+       left:0;
+       right: 0;
+       margin: auto;
+       background: linear-gradient(to bottom, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0));
+        padding: 0 25px;
+        border-radius: 3px;
+        h1{
+            font-size: 45px;
+            letter-spacing: -1px;
+            margin: 15px 0;
+        }
+        h3{
+            font-weight: 400;
+            font-size: 28px;
+            margin: 15px 0;
+                letter-spacing: -0.2px;
+        }
+        .btn-lg{
+            width: 215px;
+            height: 50px;
+            border-radius: 2px;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+        }
+        .logo-placement{
+                margin-top: 50px;
+        }
+    }
 }
 .block-rounded-blue {
     background-color: $info-color;
@@ -59,7 +100,7 @@ header {
     color: #FFF;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-top: -90px;
+  
     z-index: 5;
     position: relative;
     label{font-weight: normal;}

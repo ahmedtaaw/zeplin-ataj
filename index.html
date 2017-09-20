@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="shortcut icon" href="favicon.ico?v=2">
   <title>tajawal.com - home for millions of flights through oman air lines</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
   <link rel="stylesheet" href="/assets/Styles/main.css">
@@ -29,7 +29,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-        <a class="navbar-brand" href="#"><img src="/assets/images/logo-en-white.svg" alt="tajawal logo"> </a>
+        <a class="navbar-brand" href="#"><img src="/assets/images/logo-ltr.svg" alt="tajawal logo"> </a>
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
@@ -68,29 +68,42 @@
       <!--/.nav-collapse -->
     </div>
   </header>
-
-  <div class="container-fluid">
-    <div class="row"><img src="/assets/images/hero-image.jpg" alt="Banner Image" class="img-responsive"></div>
+  <div class="hero-banner">
+    <div class="container-fluid">
+      <div class="row"><img src="/assets/images/hero-image.jpg" alt="Banner Image" class="img-responsive"></div>
+    </div>
+    <div class="hero-info">
+      <h1>Get 10% off on flight and hotel bookings with your Emirates Islamic Card</h1>
+      <h3>Save on your booking & spend on something fun!</h3>
+      <p><button class="btn btn-default btn-lg">Book your trip</button></p>
+      <p class="logo-placement"><img src="/assets/images/logo-placement.png" alt="EMIRATES ISLAMIC Logo"></p>
+    </div>
   </div>
-
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 class="master">Visit top destinations around the globe for less</h1>
+      </div>
+    </div>
+  </div>
   <div class="container block-rounded-blue">
     <div class="row">
       <div class="col-sm-6">
         <div class="form-group ">
           <div class="tabs-toggle">
-          <input checked type="radio" name="flightOptions"> <label >One-way</label>
+            <input checked type="radio" name="flightOptions"> <label>One-way</label>
           </div>
-        <div class="tabs-toggle">
-          <input type="radio" name="flightOptions"><label  >Roundtrip</label>
+          <div class="tabs-toggle">
+            <input type="radio" name="flightOptions"><label>Roundtrip</label>
           </div>
-         <div class="tabs-toggle">
-         <input type="radio" name="flightOptions">  <label  >Multi-city</label>
+          <div class="tabs-toggle">
+            <input type="radio" name="flightOptions"> <label>Multi-city</label>
           </div>
         </div>
       </div>
       <div class="col-sm-6 text-right margin-top">
         <div class="check-dark"><input id="c1" type="checkbox" name="flightOptions"><label></label></div><label for="c1"> Direct flights only</label>
-        <div class="check-dark"><input  id="c2" type="checkbox" name="flightOptions"><label></label></div><label for="c2"> Refundable</label>
+        <div class="check-dark"><input id="c2" type="checkbox" name="flightOptions"><label></label></div><label for="c2"> Refundable</label>
       </div>
     </div>
     <div class="row">
@@ -168,9 +181,9 @@
       </div>
     </div>
   </div>
-<h1 class="master">Visit top distinations around the globe for less</h1>
-<h1 class="master border-purple">Visit top distinations around the globe for less</h1>
-<h1 class="master white">Visit top distinations around the globe for less</h1>
+  <h1 class="master">Visit top distinations around the globe for less</h1>
+  <h1 class="master border-purple">Visit top distinations around the globe for less</h1>
+  <h1 class="master white">Visit top distinations around the globe for less</h1>
   <div class="container promotions">
     <div class="row">
       <div class="col-sm-3">
@@ -181,7 +194,7 @@
       </div>
       <div class="col-sm-6 text-center top-padding">
 
-        <h1 >Oman Air<br><small>Modern vision. Timeless traditions</small></h3>
+        <h1>Oman Air<br><small>Modern vision. Timeless traditions</small></h3>
           <h1></h1>
           <h4>Oman Air is now offering <a href="#">10% off economy class</a> fares<br> and <a href="#">15% off business class</a>            fares to exciting<br> destinations. Hurry and book now while offers last! </h4>
       </div>
@@ -267,7 +280,7 @@
       <div class="row">
         <div class="col-sm-6">
           <h2>Join our exclusive newsletter list</h2>
-            <p>Get travel tips, flight deals and dreamy destinations sent straight to your inbox</p>
+          <p>Get travel tips, flight deals and dreamy destinations sent straight to your inbox</p>
         </div>
         <div class="col-sm-6 text-right margin-top">
           <div class="form-inline">
@@ -402,7 +415,7 @@
       <div class="row">
         <div class="col-sm-12 text-center">
           <p>
-            <img src="/assets/images/logo-en-white.svg" alt="tajawal logo">
+            <img src="/assets/images/logo-ltr.svg" alt="tajawal logo">
           </p>
           <p>
             <a href="#">Worldwide</a>
@@ -429,6 +442,7 @@
   <script src="/node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
   <script src="/node_modules/select2/dist/js/select2.min.js"></script>
   <script src="/node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+  <script src="/node_modules/carousel-3d/dist/jquery.carousel-3d.js" ></script>
   <script>
     $(document).ready(function () {
       $('.select2').select2({ minimumResultsForSearch: Infinity });
@@ -436,7 +450,7 @@
         $('.fakedate-1').html($('.datepicker-1').val());
         $('.fakedate-1').html($('.fakedate-1').html().split(" ").join("<span>"));
       });
-$('.datepicker-2').datepicker({ format: 'MM dd DD' }).on('changeDate', function (e) {
+      $('.datepicker-2').datepicker({ format: 'MM dd DD' }).on('changeDate', function (e) {
         $('.fakedate-2').html($('.datepicker-2').val());
         $('.fakedate-2').html($('.fakedate-2').html().split(" ").join("<span>"));
       });

@@ -18,6 +18,7 @@
   "dependencies": {
     "bootstrap-datepicker": "^1.7.1",
     "bootstrap-sass": "^3.3.7",
+    "carousel-3d": "^0.2.3",
     "jquery": "^3.2.1",
     "select2": "^4.0.3"
   }
