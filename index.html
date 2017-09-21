@@ -79,12 +79,148 @@
       <p class="logo-placement"><img src="/assets/images/logo-placement.png" alt="EMIRATES ISLAMIC Logo"></p>
     </div>
   </div>
+  <div class="catalog-destinations ">
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
         <h1 class="master">Visit top destinations around the globe for less</h1>
       </div>
     </div>
+    <div class="row">
+      <div class="col-sm-12">
+
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#Hotels" aria-controls="Hotels" role="tab" data-toggle="tab">Hotels</a></li>
+          <li role="presentation"><a href="#Flights" aria-controls="Flights" role="tab" data-toggle="tab">Flights</a></li>
+
+        </ul>
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="Hotels">
+            <div class="carousel">
+              <div class="slide">
+                <div class="wrraper">
+                  <a><img alt="Image Caption" src="/assets/images/1.jpg"></a>
+                  <div class="description">
+                    <h1>Manila</h1>
+                    <h2>Philippines</h2>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <p>
+                          starting from AED 1,200
+
+                        </p>
+                        <span class="arrow-right">
+                  </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="wrraper">
+                  <a><img alt="Image Caption" src="/assets/images/2.jpg"></a>
+                  <div class="description">
+                    <h1>
+                      Cairo
+                    </h1>
+                    <h2>
+                      Egypt
+                    </h2>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <p>
+                          starting from AED 1,200
+
+                        </p>
+                        <span class="arrow-right">
+                  </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="wrraper">
+                  <a><img alt="Image Caption" src="/assets/images/3.jpg"></a>
+                  <div class="description">
+                    <h1>
+                      Dubai
+                    </h1>
+                    <h2>
+                      United Arab Emirates
+                      <h2>
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <p>
+                              starting from AED 1,200
+
+                            </p>
+                            <span class="arrow-right">
+                  </span>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="wrraper">
+                  <a><img alt="Image Caption" src="/assets/images/4.jpg"></a>
+                  <div class="description">
+                    <h1>
+                      Abu Dhabi
+                    </h1>
+                    <h2>
+                      United Arab Emirates
+                    </h2>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <p>
+                          starting from AED 1,200
+
+                        </p>
+                        <span class="arrow-right">
+                  </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="wrraper">
+                  <a><img alt="Image Caption" src="/assets/images/5.jpg"></a>
+                  <div class="description">
+                    <h1>
+                      Amsterdam
+                    </h1>
+                    <h2>United Arab Emirates</h2>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <p>
+                          starting from AED 1,200
+
+                        </p>
+                        <span class="arrow-right">
+                  </span>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="navigate-left"><i class="fa fa-angle-left"></i></div>
+              <div class="navigate-right"><i class="fa fa-angle-right"></i></div>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="Flights">
+            <h5>Flights Content here!</h5>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
   </div>
   <div class="container block-rounded-blue">
     <div class="row">
@@ -442,7 +578,7 @@
   <script src="/node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
   <script src="/node_modules/select2/dist/js/select2.min.js"></script>
   <script src="/node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-  <script src="/node_modules/carousel-3d/dist/jquery.carousel-3d.js" ></script>
+  <script src="/assets/js/jquery-slidingCarousel.js"></script>
   <script>
     $(document).ready(function () {
       $('.select2').select2({ minimumResultsForSearch: Infinity });
@@ -453,6 +589,11 @@
       $('.datepicker-2').datepicker({ format: 'MM dd DD' }).on('changeDate', function (e) {
         $('.fakedate-2').html($('.datepicker-2').val());
         $('.fakedate-2').html($('.fakedate-2').html().split(" ").join("<span>"));
+      });
+      $(".carousel").slidingCarousel({
+        squeeze: 200,
+        animate: 500,
+        shadow: true
       });
     });
   </script>
