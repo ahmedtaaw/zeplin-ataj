@@ -5630,6 +5630,23 @@ header {
   height: 50%; }
   .half-ver:first-child {
     border-bottom: 1px solid rgba(58, 58, 58, 0.85); }
+  .half-ver .select2-container--default .select2-selection--single {
+    border: 0; }
+  .half-ver .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #bd2483; }
+  .half-ver .passenger {
+    padding-left: 15px; }
+    .half-ver .passenger input {
+      border: 0;
+      max-width: 35px;
+      display: inline-block;
+      padding: 0;
+      border-radius: 0;
+      box-shadow: none;
+      font-weight: bold; }
+    .half-ver .passenger label {
+      display: inline-block;
+      font-weight: 400; }
 
 .half-horz {
   height: 100%;

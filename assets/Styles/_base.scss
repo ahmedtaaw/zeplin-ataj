@@ -171,6 +171,29 @@ header {
     &:first-child {
         border-bottom: 1px solid $info-color;
     }
+    .select2-container--default .select2-selection--single{
+        border: 0;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__rendered{
+        color: $main-color;
+    }
+    .passenger{
+        padding-left: 15px;
+        input{
+            border: 0;
+            max-width: 35px;
+            display: inline-block;
+            padding: 0;
+            border-radius: 0;
+            box-shadow: none;
+            font-weight: bold;
+        }
+        
+        label{
+            display: inline-block;
+            font-weight: 400;
+        }
+    }
 }
 .half-horz {
     height: 100%;
