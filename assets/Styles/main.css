@@ -5546,7 +5546,6 @@ header {
     left: 0;
     right: 0;
     margin: auto;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0));
     padding: 0 25px;
     border-radius: 3px; }
     .hero-banner .hero-info h1 {
@@ -5777,23 +5776,9 @@ h4, h5 {
 h1 small, h2 small, h3 small, h4 small, h5 small {
   color: inherit; }
 
-.ver-spacing, .promotions, .knowus, footer {
+.ver-spacing, .knowus, footer {
   padding-top: 35px;
   padding-bottom: 35px; }
-
-.promotions {
-  position: relative; }
-  .promotions:after {
-    content: "";
-    position: absolute;
-    bottom: 35px;
-    background-color: #bd2483;
-    height: 2px;
-    width: 75%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    opacity: 0.2; }
 
 .top-padding {
   padding-top: 10px; }
@@ -5802,16 +5787,13 @@ h1 small, h2 small, h3 small, h4 small, h5 small {
   background-color: #f4f4f4; }
 
 .getapp {
-  background-color: #7b96b6;
+  background-color: #3a789e;
   padding-top: 10px; }
   .getapp * {
     color: #FFF; }
   .getapp .app-screens-mobile {
     margin: 0;
     margin-top: -100px; }
-
-.newsList-join {
-  background-color: #496f9d; }
 
 .iLogo {
   width: 13px;
@@ -5850,7 +5832,10 @@ h1 small, h2 small, h3 small, h4 small, h5 small {
       font-size: 18px; }
 
 .knowus {
-  background-color: #204674; }
+  background: linear-gradient(to right, #2977a9, #2eafc4); }
+  .knowus h4 > small > a {
+    display: block;
+    margin-bottom: 10px; }
   .knowus *, .knowus *:hover {
     color: white; }
   .knowus .link-left-space {
@@ -5912,7 +5897,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small {
       color: #bd2483; }
 
 footer {
-  background-color: #163862; }
+  background: linear-gradient(to right, #2977a9, #2eafc4); }
   footer *, footer *:hover {
     color: white; }
   footer hr {
@@ -6048,3 +6033,58 @@ footer {
   border-bottom: 6px solid #bd2483; }
 
 /**********End Slider***********/
+.promote-banners {
+  position: relative;
+  padding-top: 100px;
+  background-color: #0075c4; }
+  .promote-banners .gredient-bg {
+    position: absolute;
+    z-index: 2;
+    background: linear-gradient(to bottom, #0075c4, rgba(0, 117, 196, 0));
+    height: 100px;
+    width: 100%;
+    left: auto;
+    right: auto;
+    top: 45px; }
+  .promote-banners .container {
+    position: relative;
+    z-index: 3;
+    margin-top: -120px; }
+  .promote-banners .container-fluid {
+    position: relative;
+    z-index: 1; }
+    .promote-banners .container-fluid .col-sm-4 {
+      margin-top: -70px;
+      position: relative; }
+    .promote-banners .container-fluid .info {
+      position: absolute;
+      bottom: 25px;
+      left: 60px; }
+      .promote-banners .container-fluid .info h1 {
+        color: #FFF;
+        letter-spacing: -0.5px;
+        font-size: 36px;
+        position: relative;
+        z-index: 2; }
+      .promote-banners .container-fluid .info strong {
+        font-size: 196px;
+        font-weight: bold;
+        opacity: 0.32;
+        letter-spacing: -13px;
+        color: #FFF;
+        position: absolute;
+        z-index: 1;
+        top: -123px;
+        left: -50px; }
+
+.margin-ver {
+  margin-top: 35px;
+  margin-bottom: 35px; }
+
+.credit-card {
+  background-color: #4d1965;
+  padding-top: 35px;
+  padding-bottom: 55px; }
+
+.text-white p {
+  color: white; }
