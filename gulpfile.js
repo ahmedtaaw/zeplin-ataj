@@ -1,14 +1,23 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
-var autoprefixer = require('gulp-autoprefixer');
+var autoprefixer = require('autoprefixer');
+var postcss = require('gulp-postcss');
+var csswring = require('csswring')
+
 
 gulp.task('styles',function(){
-	gulp.src('./assets/Styles/main.scss')
+	var mypostcss=[
+		csswring,
+		autoprefixer({browsers: ['last 4 version']})
+	];
+	return gulp.src('./assets/Styles/main.scss')
 		.pipe(sass())
-		.pipe(autoprefixer())
+		.pipe(postcss(mypostcss))
+		.pipe(browserSync.reload({stream: true})
 		.pipe(gulp.dest('./assets/Styles/'))
-		.pipe(browserSync.reload({stream: true}));
+		
+	);
 });
 
 gulp.task('serve', function(){
