@@ -5567,13 +5567,22 @@ header {
       margin-top: 50px; }
 
 .block-rounded-blue {
-  background-color: rgba(58, 58, 58, 0.85);
-  border-radius: 5px;
+  background-image: url(/assets/images/module-bg.jpg);
   color: #FFF;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 50px;
+  padding-bottom: 125px;
   z-index: 5;
-  position: relative; }
+  position: relative;
+  background-size: cover;
+  background-position: bottom; }
+  .block-rounded-blue .search-panel {
+    background-color: #657b8b;
+    border: 1px solid #1a486a;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 5px; }
+  .block-rounded-blue h1 {
+    margin-bottom: 55px; }
   .block-rounded-blue label {
     font-weight: normal; }
   .block-rounded-blue .margin-top {
