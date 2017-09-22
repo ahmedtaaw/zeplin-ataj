@@ -60,11 +60,13 @@ header {
     }
 }
 .hero-banner{
-    margin-top: -78px;
+    top: -78px;
     position: relative;
+    margin-bottom: -78px;
     .hero-info{
        position: absolute;
        max-width: 920px;
+       width:920px;
        top:150px;
        left:0;
        right: 0;

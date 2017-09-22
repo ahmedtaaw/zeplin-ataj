@@ -5537,11 +5537,13 @@ header {
        object-fit: contain; }
 
 .hero-banner {
-  margin-top: -78px;
-  position: relative; }
+  top: -78px;
+  position: relative;
+  margin-bottom: -78px; }
   .hero-banner .hero-info {
     position: absolute;
     max-width: 920px;
+    width: 920px;
     top: 150px;
     left: 0;
     right: 0;
